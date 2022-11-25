@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="~/js/cowinApiScripts.js"></script>
+<link href="~/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+<table>
+    <tr>
+        <td>
+            <h5>States</h5>
+        </td>
+        <td>
+            <div class="container">
+                 <select id="ddlStates" style="max-width:300px;min-width:200px;">
+                </select>
+            </div>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <h5>Districts</h5>
+        </td>
+        <td>
+            <div class="container">
+                <select id="ddlDistrict" style="max-width:300px;min-width:200px;">
+                </select>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<table id="example" class="display" style="width:100%">
+</table>
+
+

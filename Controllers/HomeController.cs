@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -11,28 +10,22 @@ namespace WebApplication5.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
         private readonly ICowinRepository _cowinRepository;
 
-        public HomeController(ILogger<HomeController> logger, ICowinRepository cowinRepository)
+        public HomeController(ICowinRepository cowinRepository)
         {
-            _logger = logger;
             _cowinRepository = cowinRepository;
         }
-
 
         public async Task<List<StateData>> GetAllStates()
         {
             return await _cowinRepository.GetAllStates();
         }
 
-
         public async Task<Districts> GetDistrictByStateId(string stateId)
         {
             return await _cowinRepository.GetDistrictByStateId(stateId);
         }
-
 
         public async Task<List<Centers>> GetCalendarByDistrict(string districtId,string date)
         {

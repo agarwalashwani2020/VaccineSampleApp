@@ -2,10 +2,21 @@
     ViewData["Title"] = "Home Page";
 }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="~/js/cowinApiScripts.js"></script>
-<link href="~/css/jquery.dataTables.min.css" rel="stylesheet" />
+<style>
+    #example, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align:center;
+    }
 
+    .block {
+    }
+</style>
 <table>
     <tr>
         <td>
@@ -13,12 +24,13 @@
         </td>
         <td>
             <div class="container">
-                 <select id="ddlStates" style="max-width:300px;min-width:200px;">
+                <select id="ddlStates" style="max-width:300px;min-width:200px;">
+                    <option value="">Select</option>
                 </select>
             </div>
         </td>
     </tr>
-    
+
     <tr>
         <td>
             <h5>Districts</h5>
@@ -32,8 +44,18 @@
     </tr>
 </table>
 
+<br />
+<br />
 
-<table id="example" class="display" style="width:100%">
-</table>
+<div style="width:90%;">
+    <table id="example" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
 
-
+        </tbody>
+    </table>
+</div>

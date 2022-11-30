@@ -2,14 +2,21 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using VaccineSampleApp.CommonService;
+using VaccineSampleApp.Repositories;
 using WebApp.Models;
-using WebApp.Repositories;
-using WebApplication5.Models;
 
 namespace WebApplication5.Controllers
 {
     public class HomeController : Controller
     {
+
+        //private ICommonService _machineIdProvider;
+        //public MyWonderfulController(IMachineIdProvider machineIdProvider)
+        //{
+        //    this._machineIdProvider = machineIdProvider;
+        //}
+
         private readonly ICowinRepository _cowinRepository;
 
         public HomeController(ICowinRepository cowinRepository)
@@ -40,7 +47,7 @@ namespace WebApplication5.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new Models.ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

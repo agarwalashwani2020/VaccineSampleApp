@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaccineSampleApp", "VaccineSampleApp.csproj", "{E732AB9A-33FF-41F6-A103-69F19CBBE26E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaccineSampleApp", "VaccineSampleApp.csproj", "{E732AB9A-33FF-41F6-A103-69F19CBBE26E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaccineSampleApp.Repositories", "..\VaccineSampleApp.Repositories\VaccineSampleApp.Repositories.csproj", "{3C2F856E-FC80-4B5B-A0DD-845220BCB2BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaccineSampleApp.Models", "..\VaccineSampleApp.Models\VaccineSampleApp.Models.csproj", "{8A4D1B3B-5853-405C-B1ED-2264803FFB6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VaccineSampleApp.CommonService", "..\VaccineSampleApp.CommonService\VaccineSampleApp.CommonService.csproj", "{781E4E54-2C69-4E3B-9A7C-26A91E6751B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{E732AB9A-33FF-41F6-A103-69F19CBBE26E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E732AB9A-33FF-41F6-A103-69F19CBBE26E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E732AB9A-33FF-41F6-A103-69F19CBBE26E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2F856E-FC80-4B5B-A0DD-845220BCB2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2F856E-FC80-4B5B-A0DD-845220BCB2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2F856E-FC80-4B5B-A0DD-845220BCB2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2F856E-FC80-4B5B-A0DD-845220BCB2BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4D1B3B-5853-405C-B1ED-2264803FFB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4D1B3B-5853-405C-B1ED-2264803FFB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4D1B3B-5853-405C-B1ED-2264803FFB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4D1B3B-5853-405C-B1ED-2264803FFB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781E4E54-2C69-4E3B-9A7C-26A91E6751B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781E4E54-2C69-4E3B-9A7C-26A91E6751B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781E4E54-2C69-4E3B-9A7C-26A91E6751B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781E4E54-2C69-4E3B-9A7C-26A91E6751B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

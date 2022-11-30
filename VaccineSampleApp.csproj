@@ -7,5 +7,14 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.16" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VaccineSampleApp.CommonService\VaccineSampleApp.CommonService.csproj" />
+    <ProjectReference Include="..\VaccineSampleApp.Repositories\VaccineSampleApp.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
   
 </Project>
